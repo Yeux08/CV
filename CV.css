@@ -1,0 +1,115 @@
+.layout {
+  width: 1150px;
+  height: 1585px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1.2fr 3fr;
+  margin-top: 0%;
+  padding-top: 0%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layoutone {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 3fr 5px 4fr;
+  gap: 8px 40px;
+  padding-left: 55px;
+  padding-right: 55px;
+}
+
+#btnCapturar{
+  margin-left: auto;
+  margin-right: auto;
+}
+.topborder {
+  padding-top: 40px;
+}
+
+.div1 {
+  background-color: #283a4f;
+}
+
+.card1 {
+  border: none;
+  border-radius: 0px;
+  background-color: #283a4f !important;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+
+.card2 {
+  background-color: #283a4f;
+  text-align: center;
+}
+
+.card-img-top {
+  border-radius: 50% !important;
+}
+
+.div1i {
+  color: white;
+}
+
+.div2i {
+  color: white;
+  text-align: initial;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.hr1 {
+  color: white;
+}
+
+.hr2 {
+  color: grey;
+  margin-top: 50px;
+}
+
+.progress-bar {
+  background-color: #505964 !important ;
+}
+
+.div2 {
+  background-color: #e2e2e2;
+}
+
+.card3 {
+  padding-left: 40px;
+  padding-top: 50px;
+  padding-right: 40px;
+  background-color: #e2e2e2 !important ;
+  border: none !important;
+}
+
+.nombre {
+  font-size: 35px;
+}
+
+.exp {
+  margin-bottom: 0px;
+}
+
+.exp1 {
+  border-right: solid;
+}
+
+.mar {
+  margin-bottom: 50px;
+}
+
+.explab {
+  padding-left: 55px;
+  padding-right: 50px;
+}
+
+.card.card1 {
+  border: none;
+}
+.borderone {
+  background-color: #283a4f;
+}
