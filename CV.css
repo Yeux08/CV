@@ -1,6 +1,6 @@
 .layout {
   width: 1150px;
-  height: 1585px;
+  height: 1785px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.2fr 3fr;
