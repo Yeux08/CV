@@ -1,398 +1,340 @@
 <html>
-  <head>
-    <link rel="stylesheet" href="CV.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
-      crossorigin="anonymous"
-      media="all"
-    />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" ></script>
 
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
-    <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
+<head>
+  <link rel="stylesheet" href="CV.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
+    media="all" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
-    <script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.js"></script>
+  <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
+  <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
 
-      window.html2canvas = html2canvas;
-      window.jsPDF = window.jspdf.jsPDF;
+  <script>
 
-      function makepdf(){
+    window.html2canvas = html2canvas;
+    window.jsPDF = window.jspdf.jsPDF;
 
-        html2canvas(document.querySelector("#cbgcv"),{
+    function makepdf() {
 
-            allowTaint:true,
-            useCORS: true,
-            scale: 1
-        }).then(canvas => {
+      html2canvas(document.querySelector("#cbgcv"), {
 
-          var img = canvas.toDataURL("image/png");
+        allowTaint: true,
+        useCORS: true,
+        scale: 1
+      }).then(canvas => {
 
-          var doc = new jsPDF();
-          doc.addImage(img, 'PNG', 0,0,0,300);
-          doc.save("htmltopdf");
-        });
+        var img = canvas.toDataURL("image/png");
 
-      }
+        var doc = new jsPDF();
+        doc.addImage(img, 'PNG', 0, 0, 0, 300);
+        doc.save("htmltopdf");
+      });
 
-    </script>
-  </head>
-  <body id="bodyone">
-    <div id="cvcbg">
-      <section class="layout" id="cbgcv">
-        <!-- Seccion Izquierda  -->
+    }
 
-        <div class="div1">
-          <div class="card card1">
-            <img src=".\img\fotoperfil.jpg" class="card-img-top" alt="..." />
-            <div class="card-body card2">
-              <p class="card-text div1i">SOBRE MÍ</p>
-              <p class="card-text div2i">
-                Desarrollador Frontend, con amplia experiencia en el desarrollo web, apasionado por el diseño y maquetación de paginas web, busco aportar mis conocimientos en nuevas metas y retos, mi capacidad para aportar ideas en la resolución de problemas y trabajar en equipo son mis principales herramientas para trabajar y crecer como desarrollador Frontend.
-              </p>
+  </script>
+</head>
 
-              <hr class="hr1" />
+<body id="bodyone">
+  <div id="cvcbg">
+    <section class="layout" id="cbgcv">
+      <!-- Seccion Izquierda  -->
 
-              <p class="card-text div1i">REFERENCIAS</p>
+      <div class="div1">
+        <div class="card card1">
+          <img src=".\img\fotoperfil.jpg" class="card-img-top" alt="..." />
+          <div class="card-body card2">
+            <p class="card-text div1i">SOBRE MÍ</p>
+            <p class="card-text div2i">
+              Desarrollador Frontend, con amplia experiencia en el desarrollo web, apasionado por el diseño y
+              maquetación de paginas web, busco aportar mis conocimientos en nuevas metas y retos. Mi capacidad para
+              aportar ideas en la resolución de problemas y trabajar en equipo son mis principales herramientas para
+              crecer como desarrollador Frontend. </p>
 
-              <p class="card-text div2i">
-                JOSUE ARRIECHE. <br />
-                TUSCANY, Supervisor de Aplicaciones<br />
-                T: 3044721559<br /><br />
-                JOSE RODRIGUEZ.<br />
-                TUSCANY, Supervisor de Infraestructura<br />
-                T: 3102348579<br /><br />
-                OLGA BIBIANA PINZÓN. TUSCANY, Especialista SAP T: 3208463459
-              </p>
+            <hr class="hr1" />
 
-              <hr class="hr1" />
+            <p class="card-text div1i">REFERENCIAS</p>
 
-              <p class="card-text div1i">IDIOMAS</p>
-              <p class="card-text div2i">INGLES</p>
+            <p class="card-text div2i">
+              JOSUE ARRIECHE. <br />
+              TUSCANY, Supervisor de Aplicaciones<br />
+              T: 3044721559<br /><br />
+              JOSE RODRIGUEZ.<br />
+              TUSCANY, Supervisor de Infraestructura<br />
+              T: 3102348579<br /><br />
+              OLGA BIBIANA PINZÓN. TUSCANY, Especialista SAP T: 3208463459
+            </p>
 
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 40%"
-                ></div>
+            <hr class="hr1" />
+
+            <p class="card-text div1i">IDIOMAS</p>
+            <p class="card-text div2i">INGLES</p>
+
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 40%"></div>
+            </div>
+
+            <hr class="hr1" />
+
+            <p class="card-text div1i">HABILIDADES</p>
+            <p class="card-text div2i">HTML</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+            </div>
+            <p class="card-text div2i">CSS</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+            </div>
+            <p class="card-text div2i">JAVASCRIPT</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+            </div>
+            <p class="card-text div2i">BOOTSTRAP</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+            </div>
+            <p class="card-text div2i">REACT JS</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 50%"></div>
+            </div>
+            <p class="card-text div2i">SQL SERVER</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 80%"></div>
+            </div>
+            <p class="card-text div2i">MySQL</p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" style="width: 70%"></div>
+            </div>
+
+            <hr class="hr1" />
+
+            <a href="https://www.linkedin.com/in/cristian-ballen-gamboa-382095143">
+              <i class="bi bi-linkedin" style="color: white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                  class="bi bi-linkedin" viewBox="0 0 16 16">
+                  <path
+                    d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z" />
+                </svg>
+              </i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seccion Derecha  -->
+
+      <div class="div2">
+        <div class="card mb-3 card3">
+          <div class="row no-gutters">
+            <div class="col-md-6">
+              <div class="card-body">
+                <h5 class="card-title nombre">CRISTIAN BALLEN GAMBOA</h5>
+                <p class="card-text">FRONTEND DEVELOPER</p>
               </div>
-
-              <hr class="hr1" />
-
-              <p class="card-text div1i">HABILIDADES</p>
-              <p class="card-text div2i">HTML</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                ></div>
-              </div>
-              <p class="card-text div2i">CSS</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                ></div>
-              </div>
-              <p class="card-text div2i">JAVASCRIPT</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                ></div>
-              </div>
-              <p class="card-text div2i">BOOTSTRAP</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                ></div>
-              </div>
-              <p class="card-text div2i">REACT JS</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 50%"
-                ></div>
-              </div>
-              <p class="card-text div2i">SQL SERVER</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 80%"
-                ></div>
-              </div>
-              <p class="card-text div2i">MySQL</p>
-              <div class="progress">
-                <div
-                  class="progress-bar"
-                  role="progressbar"
-                  style="width: 70%"
-                ></div>
-              </div>
-
-              <hr class="hr1" />
-
-              <a href="">
-                <i class="bi bi-linkedin" style="color: white">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="16"
-                    height="16"
-                    fill="currentColor"
-                    class="bi bi-linkedin"
-                    viewBox="0 0 16 16"
-                  >
+            </div>
+            <div class="col-md-6">
+              <div class="card-body">
+                <p class="card-text">
+                  <i class="bi bi-geo-alt-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                      <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z" />
+                    </svg></i>
+                  Carrera 87h #55-47 sur, Bogotá, 110711, Colombia
+                </p>
+                <p class="card-text">
+                  <i class="bi bi-telephone-fill"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                      fill="currentColor" class="bi bi-telephone-fill" viewBox="0 0 16 16">
+                      <path fill-rule="evenodd"
+                        d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z" />
+                    </svg>
+                  </i>
+                  3195877956
+                </p>
+                <p class="card-text">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-envelope-fill" viewBox="0 0 16 16">
                     <path
-                      d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"
-                    />
-                  </svg>
-                </i>
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Seccion Derecha  -->
-
-        <div class="div2">
-          <div class="card mb-3 card3">
-            <div class="row no-gutters">
-              <div class="col-md-6">
-                <div class="card-body">
-                  <h5 class="card-title nombre">CRISTIAN BALLEN GAMBOA</h5>
-                  <p class="card-text">FRONTEND DEVELOPER</p>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card-body">
-                  <p class="card-text">
-                    <i class="bi bi-geo-alt-fill"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-geo-alt-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"
-                        /></svg></i>
-                    Carrera 87h #55-47 sur, Bogotá, 110711, Colombia
-                  </p>
-                  <p class="card-text">
-                    <i class="bi bi-telephone-fill"
-                      ><svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="16"
-                        height="16"
-                        fill="currentColor"
-                        class="bi bi-telephone-fill"
-                        viewBox="0 0 16 16"
-                      >
-                        <path
-                          fill-rule="evenodd"
-                          d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"
-                        />
-                      </svg>
-                    </i>
-                    3195877956
-                  </p>
-                  <p class="card-text">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="16"
-                      height="16"
-                      fill="currentColor"
-                      class="bi bi-envelope-fill"
-                      viewBox="0 0 16 16"
-                    >
-                      <path
-                        d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"
-                      /></svg><i class="bi bi-envelope-fill"></i> Ballencris806@gmail.com
-                  </p>
-                </div>
+                      d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z" />
+                  </svg><i class="bi bi-envelope-fill"></i> Ballencris806@gmail.com
+                </p>
               </div>
             </div>
-            <hr class="hr2" />
           </div>
-
-          <h5 class="card-title explab">EXPERIENCIA LABORAL</h5>
-
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">IPROSPECT</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">Ago. 2020 - Actualmente</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Web Content</h5>
-              <p class="card-text exp">Tareas realizadas</p>
-              <p class="card-text exp">- Desarrollo frontend</p>
-              <p class="card-text exp mar">
-                - Administrador CMS (Content Management System) GM Chevrolet.
-              </p>
-            </div>
-          </section>
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">dic. 2017 - abr. 2020</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Analista de programación Junior</h5>
-              <p class="card-text exp">Tareas realizadas</p>
-              <p class="card-text exp mar">
-                - Programación ASP.NET Full stack.<br />
-                - Desarrollo CMS (Content Management System).<br />
-                - Creacion plantillas HTML y CSS.<br />
-                - Manejo SQL Server.<br />
-                - Manejo Microso Power BI.<br />
-                - Administración Sharepoint OnLine.
-              </p>
-            </div>
-          </section>
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">oct. 2017 - dic. 2017</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Programador Junior</h5>
-              <p class="card-text exp">Tareas realizadas</p>
-              <p class="card-text exp mar">
-                - Programación ASP.NET Full stack.<br />
-                - Administración SharePoint OnLine.<br />
-                - Manejo SQL Server.<br />
-                - Creacion plantillas HTML y CSS.
-              </p>
-            </div>
-          </section>
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">mar. 2017 - sep. 2017</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Aprendiz Sena Aplicaciones</h5>
-              <p class="card-text exp">Tareas realizadas</p>
-              <p class="card-text exp mar">- Programación ASP.NET Full stack</p>
-            </div>
-          </section>
           <hr class="hr2" />
-
-          <h5 class="card-title explab">EDUCACIÓN</h5>
-
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">ECCI</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">Actualmente 9 Semestre</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Ingenieria de sistemas</h5>
-            </div>
-          </section>
-
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">SENA</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">2017</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">
-                Tecnología en Análisis y Desarrollo de Sistemas de Información
-              </h5>
-            </div>
-          </section>
-
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">SENA</h5>
-              <p class="card-text exp">Bogotá</p>
-              <p class="card-text exp mar">2015</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">Técnico en Programación de Software</h5>
-            </div>
-          </section>
-          <hr class="hr2" />
-
-          <section class="layoutone">
-            <div class="topborder">
-              <h5 class="card-title">CERTIFICACIÓN</h5><br>
-              <p class="card-text exp">- Scrum Foundation Professional Certificate (SFPC)</p>
-            </div>
-            <div class="borderone"></div>
-            <div class="topborder">
-              <h5 class="card-title">CURSOS</h5><br>
-              <p class="card-text exp">- Google Tag Manager</p>
-              <p class="card-text exp">- Experiencia de usuario (UX) avanzado</p>
-              <p class="card-text exp">- Google Analytics esencial</p>
-              <p class="card-text exp">- React esencial</p>
-            </div>
-          </section>
-
         </div>
-      </section>
-    </div>
-<hr>
-    <button  id="btnCapturar" class="btn btn-dark">Descargar CV imagen</button>
-    <button  onclick="makepdf()" class="btn btn-dark">Descargar CV pdf</button>
-    <hr>
-    <script>
+
+        <h5 class="card-title explab">EXPERIENCIA LABORAL</h5>
+
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">IPROSPECT</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">Ago. 2020 - Actualmente</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Web Content</h5>
+            <p class="card-text exp">Tareas realizadas</p>
+            <p class="card-text exp">- Desarrollo frontend</p>
+            <p class="card-text exp mar">
+              - Administrador CMS (Content Management System) GM Chevrolet.
+            </p>
+          </div>
+        </section>
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">dic. 2017 - abr. 2020</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Analista de programación Junior</h5>
+            <p class="card-text exp">Tareas realizadas</p>
+            <p class="card-text exp mar">
+              - Programación ASP.NET Full stack.<br />
+              - Desarrollo CMS (Content Management System).<br />
+              - Creacion plantillas HTML y CSS.<br />
+              - Manejo SQL Server.<br />
+              - Manejo Microso Power BI.<br />
+              - Administración Sharepoint OnLine.
+            </p>
+          </div>
+        </section>
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">oct. 2017 - dic. 2017</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Programador Junior</h5>
+            <p class="card-text exp">Tareas realizadas</p>
+            <p class="card-text exp mar">
+              - Programación ASP.NET Full stack.<br />
+              - Administración SharePoint OnLine.<br />
+              - Manejo SQL Server.<br />
+              - Creacion plantillas HTML y CSS.
+            </p>
+          </div>
+        </section>
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">TUSCANY SOUTH AMERICA</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">mar. 2017 - sep. 2017</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Aprendiz Sena Aplicaciones</h5>
+            <p class="card-text exp">Tareas realizadas</p>
+            <p class="card-text exp mar">- Programación ASP.NET Full stack</p>
+          </div>
+        </section>
+        <hr class="hr2" />
+
+        <h5 class="card-title explab">EDUCACIÓN</h5>
+
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">ECCI</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">Actualmente 9 Semestre</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Ingenieria de sistemas</h5>
+          </div>
+        </section>
+
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">SENA</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">2017</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">
+              Tecnología en Análisis y Desarrollo de Sistemas de Información
+            </h5>
+          </div>
+        </section>
+
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">SENA</h5>
+            <p class="card-text exp">Bogotá</p>
+            <p class="card-text exp mar">2015</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">Técnico en Programación de Software</h5>
+          </div>
+        </section>
+        <hr class="hr2" />
+
+        <section class="layoutone">
+          <div class="topborder">
+            <h5 class="card-title">CERTIFICACIÓN</h5><br>
+            <p class="card-text exp">- Scrum Foundation Professional Certificate (SFPC)</p>
+          </div>
+          <div class="borderone"></div>
+          <div class="topborder">
+            <h5 class="card-title">CURSOS</h5><br>
+            <p class="card-text exp">- Google Tag Manager</p>
+            <p class="card-text exp">- Experiencia de usuario (UX) avanzado</p>
+            <p class="card-text exp">- Google Analytics esencial</p>
+            <p class="card-text exp">- React esencial</p>
+          </div>
+        </section>
+
+      </div>
+    </section>
+  </div>
+  <hr>
+  <button id="btnCapturar" class="btn btn-dark">Descargar CV imagen</button>
+  <button onclick="makepdf()" class="btn btn-dark">Descargar CV pdf</button>
+  <hr>
+  <script>
 
 
-/**
- * Ejemplo 4 de html2canvas para convertir el HTML de una web
- * a un elemento canvas - Descargar la captura como imagen PNG
- * 
- * @author parzibyte
- */
-//Definimos el botón para escuchar su click
-const $boton = document.querySelector("#btnCapturar"), // El botón que desencadena
-  $objetivo = document.getElementById('cbgcv'); // A qué le tomamos la fotocanvas
-// Nota: no necesitamos contenedor, pues vamos a descargarla
+    /**
+     * Ejemplo 4 de html2canvas para convertir el HTML de una web
+     * a un elemento canvas - Descargar la captura como imagen PNG
+     * 
+     * @author parzibyte
+     */
+    //Definimos el botón para escuchar su click
+    const $boton = document.querySelector("#btnCapturar"), // El botón que desencadena
+      $objetivo = document.getElementById('cbgcv'); // A qué le tomamos la fotocanvas
+    // Nota: no necesitamos contenedor, pues vamos a descargarla
 
-// Agregar el listener al botón
-$boton.addEventListener("click", () => {
-  html2canvas($objetivo) // Llamar a html2canvas y pasarle el elemento
-    .then(canvas => {
-      // Cuando se resuelva la promesa traerá el canvas
-      // Crear un elemento <a>
-      let enlace = document.createElement('a');
-      enlace.download = "Captura de página web - Parzibyte.me.png";
-      // Convertir la imagen a Base64
-      enlace.href = canvas.toDataURL();
-      // Hacer click en él
-      enlace.click();
+    // Agregar el listener al botón
+    $boton.addEventListener("click", () => {
+      html2canvas($objetivo) // Llamar a html2canvas y pasarle el elemento
+        .then(canvas => {
+          // Cuando se resuelva la promesa traerá el canvas
+          // Crear un elemento <a>
+          let enlace = document.createElement('a');
+          enlace.download = "Captura de página web - Parzibyte.me.png";
+          // Convertir la imagen a Base64
+          enlace.href = canvas.toDataURL();
+          // Hacer click en él
+          enlace.click();
+        });
     });
-});
 
 
-    </script>
+  </script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
+    integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
 </html>
