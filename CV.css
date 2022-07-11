@@ -1,6 +1,6 @@
 .layout {
-  width: 1225px;
-  height: 1750px;
+  width: 1265px;
+  height: 1800px;
   display: grid;
   grid-template-rows: 1fr;
   grid-template-columns: 1.2fr 3fr;
@@ -13,7 +13,7 @@
 .layoutone {
   display: grid;
   grid-template-rows: 1fr;
-  grid-template-columns: 3fr 5px 4fr;
+  grid-template-columns: 4fr 5px 4fr;
   gap: 8px 40px;
   padding-left: 55px;
   padding-right: 55px;
@@ -51,6 +51,7 @@
 
 .div1i {
   color: white;
+
 }
 
 .div2i {
@@ -66,8 +67,14 @@
 }
 
 .hr2 {
-  color: grey;
+  height: 2px !important;
+  width: 90%;
+  background-color: black !important;
+  color: black !important;
   margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  opacity: .40;
 }
 
 .progress-bar {
@@ -103,8 +110,8 @@
 }
 
 .explab {
-  padding-left: 55px;
-  padding-right: 50px;
+  padding-bottom: 20px;
+  text-align: center;
 }
 
 .card.card1 {
