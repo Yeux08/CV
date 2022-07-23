@@ -1,8 +1,7 @@
-
 <html lang="es-ES">
 
 <head>
-   <meta charset="UTF-8" >
+  <meta charset="UTF-8">
   <link rel="stylesheet" href="CV.css" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"
@@ -14,30 +13,7 @@
   <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js"></script>
 
-  <script>
 
-    window.html2canvas = html2canvas;
-    window.jsPDF = window.jspdf.jsPDF;
-
-    function makepdf() {
-
-      html2canvas(document.querySelector("#cbgcv"), {
-
-        allowTaint: true,
-        useCORS: true,
-        scale: 1
-      }).then(canvas => {
-
-        var img = canvas.toDataURL("image/png");
-
-        var doc = new jsPDF();
-        doc.addImage(img, 'PNG', 0, 0, 0, 300);
-        doc.save("htmltopdf");
-      });
-
-    }
-
-  </script>
   <title>Hoja de vida Cristian Ballen</title>
 </head>
 
@@ -53,7 +29,8 @@
             <p class="card-text div1i">SOBRE MÍ</p>
             <p class="card-text div2i">
               Desarrollador Frontend, apasionado por el diseño y la maquetación de páginas web. Tengo 6 años de
-              experiencia en el desarrollo de Landing page, y en mantener un buen funcionamiento y buenas prácticas en el
+              experiencia en el desarrollo de Landing page, y en mantener un buen funcionamiento y buenas prácticas en
+              el
               contenido que se publica en cada una de ellas. Cree las interfaces usadas en las páginas web de los
               dealers de Chevrolet a nivel Colombia. </p>
 
@@ -305,38 +282,7 @@
   <button id="btnCapturar" class="btn btn-dark">Descargar CV imagen</button>
   <button onclick="makepdf()" class="btn btn-dark">Descargar CV pdf</button>
   <hr>
-  <script>
-
-
-    /**
-     * Ejemplo 4 de html2canvas para convertir el HTML de una web
-     * a un elemento canvas - Descargar la captura como imagen PNG
-     * 
-     * @author parzibyte
-     */
-    //Definimos el botón para escuchar su click
-    const $boton = document.querySelector("#btnCapturar"), // El botón que desencadena
-      $objetivo = document.getElementById('cbgcv'); // A qué le tomamos la fotocanvas
-    // Nota: no necesitamos contenedor, pues vamos a descargarla
-
-    // Agregar el listener al botón
-    $boton.addEventListener("click", () => {
-      html2canvas($objetivo) // Llamar a html2canvas y pasarle el elemento
-        .then(canvas => {
-          // Cuando se resuelva la promesa traerá el canvas
-          // Crear un elemento <a>
-          let enlace = document.createElement('a');
-          enlace.download = "Captura de página web - Parzibyte.me.png";
-          // Convertir la imagen a Base64
-          enlace.href = canvas.toDataURL();
-          // Hacer click en él
-          enlace.click();
-        });
-    });
-
-
-  </script>
-
+  <script src="./cV.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"
     integrity="sha512-qZvrmS2ekKPF2mSznTQsxqPgnpkI4DNTlrdUmTzrDgektczlKNRRhy5X5AAOnx5S09ydFYWWNSfcEqDTTHgtNA=="
     crossorigin="anonymous" referrerpolicy="no-referrer"></script>
