@@ -11,7 +11,7 @@ function makepdf() {
 
     var doc = new jsPDF();
     doc.addImage(img, "PNG", 0, 0, 0, 300);
-    doc.save("htmltopdf");
+    doc.save("CV-Cristian-Ballen");
   });
 }
 
@@ -33,7 +33,7 @@ $boton.addEventListener("click", () => {
       // Cuando se resuelva la promesa traerá el canvas
       // Crear un elemento <a>
       let enlace = document.createElement("a");
-      enlace.download = "Captura de página web - Parzibyte.me.png";
+      enlace.download = "CV-Cristian-Ballen.png";
       // Convertir la imagen a Base64
       enlace.href = canvas.toDataURL();
       // Hacer click en él
